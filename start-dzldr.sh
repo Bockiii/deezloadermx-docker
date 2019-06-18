@@ -21,7 +21,7 @@ if [ ! -f $FILE ]; then
 	rm master.zip &
 	rm -R /deezloaderremix &
 	wait
-	wgethttps://notabug.org/RemixDevs/DeezloaderRemix/archive/development.zip &
+	wget https://notabug.org/RemixDevs/DeezloaderRemix/archive/development.zip &
 	wait
 	unzip development.zip &
 	wait
