@@ -21,9 +21,9 @@ if [ ! -f $FILE ]; then
 	rm master.zip &
 	rm -R /deezloaderremix &
 	wait
-	wget https://notabug.org/RemixDevs/DeezloaderRemix/archive/master.zip &
+	wgethttps://notabug.org/RemixDevs/DeezloaderRemix/archive/development.zip &
 	wait
-	unzip master.zip &
+	unzip development.zip &
 	wait
 	cd /deezloaderremix
 	yarn install &
