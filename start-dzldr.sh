@@ -2,7 +2,7 @@
 FILE=/deezloaderremix/update.json
 if [ -f $FILE ]; then
 	echo "File $FILE exists."
-	wget -O /deezloaderremix/online.json 'https://notabug.org/RemixDevs/DeezloaderRemix/raw/master/update.json' &
+	wget -O /deezloaderremix/online.json 'https://notabug.org/RemixDevs/DeezloaderRemix/raw/development/update.json' &
 	wait
 	instV=$(cat $FILE | jq '."version"')
 	onlV=$(cat /deezloaderremix/online.json | jq '."version"')
@@ -18,7 +18,7 @@ fi
 if [ ! -f $FILE ]; then
 	echo "--- Downloading Latest Version ---"
 	cd /
-	rm master.zip &
+	rm development.zip &
 	rm -R /deezloaderremix &
 	wait
 	wget https://notabug.org/RemixDevs/DeezloaderRemix/archive/development.zip &
