@@ -30,7 +30,7 @@ RUN \
     yarn install && \
     yarn cache clean
   
-EXPOSE 1730
+EXPOSE 1731
 
 COPY root/ /
 

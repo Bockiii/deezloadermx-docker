@@ -46,7 +46,7 @@ services:
 
 `-e PGID=1000`                          - OPTIONAL: Group ID, see above.
 
-`-p 1730:1730`                          - Port opened for the web interface. (port 1731 if you are using the latest-dev tag)
+`-p 1730:1730`                          - Port opened for the web interface. (port `1731` if you are using the `dev` tag)
 
 `bocki/deezloaderrmx`                   - This container.
 
@@ -54,11 +54,11 @@ To access the web interface, go to http://YOURSERVERIP:1730
 
 ## Tags
 
-There are only 2 tags right now.
+`latest`                : Latest state of the master branch. Can be considered "working".
 
-`latest`      : Latest state of the master branch. Can be considered "working"
+`dev`                   : Latest state of the development branch. Highly unstable, can break at any time. You should not generally use this. 
 
-`latest-dev`  : Latest state of the development branch. Highly unstable, can break at any time. You should not generally use this.
+Both tags include `amd64`, `arm32v7` and `arm64v8` architectures. Big thanks to tempestnano on github for the arm containers!
 
 ## Disclaimer and Links
 
