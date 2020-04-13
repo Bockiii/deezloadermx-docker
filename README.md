@@ -2,6 +2,16 @@
 
 Deezloader Remix in a Docker container.
 
+# Disclaimer
+
+V4.4.0 is the last version of Deezloader Remix! The devs are working on a successor, where I am also providing a docker container for.
+
+Find the successor here: 
+    Repo: https://notabug.org/RemixDev/deemix
+    Docker: https://hub.docker.com/r/bocki/deemix
+
+This will be the last update to the container and I removed the dev tag as well (as there is no development anymore)
+
 ## How to run this
 
 Deezloader Remix will work out of the box, but you should at least set a fixed port for the web interface and mount a folder to the container for where your downloads will go.
@@ -46,7 +56,7 @@ services:
 
 `-e PGID=1000`                          - OPTIONAL: Group ID, see above.
 
-`-p 1730:1730`                          - Port opened for the web interface. (port `1731` if you are using the `dev` tag)
+`-p 1730:1730`                          - Port opened for the web interface.
 
 `bocki/deezloaderrmx`                   - This container.
 
@@ -54,11 +64,9 @@ To access the web interface, go to http://YOURSERVERIP:1730
 
 ## Tags
 
-`latest`                : Latest state of the master branch. Can be considered "working".
+`latest`                : V4.4.0 of Deezloader Remix
 
-`dev`                   : Latest state of the development branch. Highly unstable, can break at any time. You should not generally use this. 
-
-Both tags include `amd64`, `arm32v7` and `arm64v8` architectures. Big thanks to tempestnano on github for the arm containers!
+Tag includes `amd64`, `arm32v7` and `arm64v8` architectures. Big thanks to tempestnano on github for the arm containers!
 
 ## Disclaimer and Links
 
@@ -71,4 +79,4 @@ Repo for Deezloader Remix: https://notabug.org/RemixDevs/DeezloaderRemix
 Issue Tracker for this Docker: https://github.com/Bockiii/deezloadermx-docker/issues
 
 
-Feel free to open an issue that is Docker related, and not related to Deezloader development. Go to the Deezloader repository for that.
+Feel free to open an issue that is Docker related, and not related to Deezloader development. Their development stopped, so if it's broken, it's broken. Check the successor Deemix (links at the start) for progress.
