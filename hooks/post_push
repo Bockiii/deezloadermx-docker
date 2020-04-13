@@ -40,5 +40,4 @@ else
     chmod +x manifest-tool
     #./manifest-tool push from-args --platforms ${PLATFORMS_ARCH} --template ${IMAGE_NAME} --target ${IMAGE_NAME}
     ./manifest-tool push from-spec manifest.yaml
-    ./manifest-tool push from-spec manifest.dev.yaml
 fi
