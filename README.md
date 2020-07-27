@@ -8,7 +8,7 @@ V4.4.0 is the last version of Deezloader Remix! The devs are working on a succes
 
 Find the successor here: 
     Repo: https://notabug.org/RemixDev/deemix
-    Docker: https://hub.docker.com/r/bocki/deemix
+    Docker: https://gitlab.com/Bockiii/deemix-docker
 
 This will be the last update to the container and I removed the dev tag as well (as there is no development anymore)
 
